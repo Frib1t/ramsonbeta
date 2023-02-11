@@ -2,7 +2,7 @@ import hashlib
 import os
 import shutil
 
-HASH = "5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5"
+HASH = "5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5" # Change this
 
 
 def hash_password(password):
@@ -25,7 +25,7 @@ def decrypt_directory(directory, password2):
 
 
 def main():
-    pregunta = input("Desea desencriptar: [S/N] ")
+    pregunta = input("Desea desencriptar [S/N]: ")
     if pregunta == "S":
         password2 = input("Ingrese la contraseña: ")
         hash2 = hash_password(password2)
